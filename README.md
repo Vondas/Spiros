@@ -1,11 +1,11 @@
 # [Spiros](https://reactjs.org/) &middot;
-<img src="../logo-v.png" align="left" width="192px" height="192px"/>
+<img src="./public/img/logo.svg" align="left" width="190px" height="190px"/>
 <img align="left" width="0" height="192px" hspace="10"/>
 
 > Open Source CRM for freelance students with a focus on automating administrative tasks
 
-[![Under Development](https://img.shields.io/badge/under-development-orange.svg)](https://github.com/cez-aug/github-project-boilerplate) [![Public Domain](https://img.shields.io/badge/public-domain-lightgrey.svg)](http://github.com/cez-aug/github-project-boilerplate)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
+[![Under Development](https://img.shields.io/badge/under-development-orange.svg)](http://github.com/cez-aug/github-project-boilerplate)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 > The purpose is to design an open source software for freelancers to manage the daily tasks of their business such as treasury, accounting and customer management.
 
@@ -17,7 +17,6 @@
 > Follow this step to get this project up and running on your machines
 
 ```sh
-# Describe it in a nice way. Code samples with installation basics works great
 $ code goes here
 ```
 
@@ -27,7 +26,7 @@ $ code goes here
 
 ## Usage
 
-> **[?]** Tell contributors how to use it.
+> **[?]** How to use it ? 
 
 ## Contributing
 
@@ -53,4 +52,4 @@ $ code goes here
 
 ## License
 
-Vondas is MIT licensed.
+Spiros is MIT licensed.
