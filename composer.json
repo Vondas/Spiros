@@ -1,0 +1,10 @@
+{
+    "name": "sbaudray/spiros",
+    "authors": [
+        {
+            "name": "sbaudray",
+            "email": "sebastien.baudray@hetic.net"
+        }
+    ],
+    "require": {}
+}
