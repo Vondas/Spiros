@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_mode_edit_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dashboard-home" transform="translate(-46.000000, -362.000000)">
+            <g id="Group-8">
+                <g id="Group-7" transform="translate(42.000000, 358.000000)">
+                    <g id="ic_mode_edit_24px">
+                        <path d="M4.375,25.15625 L4.375,30.625 L9.84375,30.625 L25.9729167,14.4958333 L20.5041667,9.02708333 L4.375,25.15625 Z M30.2020833,10.2666667 C30.7708333,9.69791667 30.7708333,8.77916667 30.2020833,8.21041667 L26.7895833,4.79791667 C26.2208333,4.22916667 25.3020833,4.22916667 24.7333333,4.79791667 L22.0645833,7.46666667 L27.5333333,12.9354167 L30.2020833,10.2666667 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <polygon id="Shape" points="0 0 35 0 35 35 0 35"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
