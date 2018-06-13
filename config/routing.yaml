@@ -1,0 +1,3 @@
+hello_custom:
+  path: /
+  defaults: { _controller: 'Controllers\IndexController::view' }
