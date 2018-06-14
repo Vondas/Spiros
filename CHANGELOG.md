@@ -1,7 +1,6 @@
 # Change Log
 
-## [Unreleased](https://github.com/Vondas/Spiros/tree/HEAD)
-
+## [0.0.1](https://github.com/Vondas/Spiros/tree/0.0.1) (2018-06-14)
 **Closed issues:**
 
 - Legacy folders still present [\#24](https://github.com/Vondas/Spiros/issues/24)
@@ -11,6 +10,12 @@
 
 **Merged pull requests:**
 
+- V0.0.1 [\#38](https://github.com/Vondas/Spiros/pull/38) ([sbaudray](https://github.com/sbaudray))
+- handle database connection [\#37](https://github.com/Vondas/Spiros/pull/37) ([sbaudray](https://github.com/sbaudray))
+- Profil [\#36](https://github.com/Vondas/Spiros/pull/36) ([AlexRCCO](https://github.com/AlexRCCO))
+- add dotenv support [\#35](https://github.com/Vondas/Spiros/pull/35) ([sbaudray](https://github.com/sbaudray))
+- make username nullable [\#34](https://github.com/Vondas/Spiros/pull/34) ([sbaudray](https://github.com/sbaudray))
+- Automation changelog [\#32](https://github.com/Vondas/Spiros/pull/32) ([Adaane](https://github.com/Adaane))
 - Create CHANGELOG.MD [\#30](https://github.com/Vondas/Spiros/pull/30) ([Adaane](https://github.com/Adaane))
 - Update README.md [\#29](https://github.com/Vondas/Spiros/pull/29) ([Adaane](https://github.com/Adaane))
 - Create CONTRIBUTING.md [\#28](https://github.com/Vondas/Spiros/pull/28) ([Adaane](https://github.com/Adaane))
