@@ -4,7 +4,7 @@
 
 > Open Source CRM for freelance students with a focus on automating administrative tasks
 
-[![Under Development](https://img.shields.io/badge/under-development-orange.svg)](http://github.com/cez-aug/github-project-boilerplate)
+[![Under Development](https://img.shields.io/badge/under-development-orange.svg)](#)
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 > The purpose is to design an open source software for freelancers to manage the daily tasks of their business such as treasury, accounting and customer management.
@@ -14,7 +14,10 @@
 
 ## Installing
 
-> Follow this step to get this project up and running on your machines
+### Requirements
+* PHP 7.1+
+* JavaScript
+* MySQL 5.7 ou 8.0 ou PostgreSQL 10
 
 ```sh
 $ code goes here
@@ -30,6 +33,8 @@ $ code goes here
 
 ## Contributing
 
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change and then : 
+
 1. `Fork` this repository
 2. Create a `branch`
 3. `Commit` your changes
@@ -37,9 +42,11 @@ $ code goes here
 5. Submit a `pull request`
 
 
+
 ## Changelog :memo:
 
-> **[?]** Link for our `CHANGELOG` file.
+See the [CHANGELOG](https://github.com/Vondas/Spiros/blob/master/CHANGELOG.md) file.
+
 
 ## To-Do :man:
 
@@ -49,7 +56,11 @@ $ code goes here
 - [ ] Create the Customers CRUD
 - [ ] Create the Tasks CRUD
 
+## Roadmap
+
+v0.0.1
+
 
 ## License
 
-Spiros is MIT licensed.
+Spiros is [MIT licensed](https://choosealicense.com/licenses/mit/).
