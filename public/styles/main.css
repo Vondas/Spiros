@@ -630,4 +630,121 @@ header .droite .bell {
     background-color: #ffffff;
     border: solid 1px #979797; }
 
+.listing_body {
+  display: flex;
+  justify-content: center; }
+
+.dashboard {
+  width: 80%;
+  font-family: "Futura LT";
+  position: relative;
+  top: 85px;
+  left: 110px;
+  margin-top: 45px; }
+
+.dashboard_user {
+  display: flex;
+  justify-content: space-between; }
+  .dashboard_user .button_add {
+    font-family: "Futura LT";
+    width: 255px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #4509d8;
+    border: none;
+    color: #fff; }
+  .dashboard_user h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal; }
+
+.dashboard_title {
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 10px; }
+  .dashboard_title .dashboard_title--client {
+    width: 17%; }
+  .dashboard_title .dashboard_title--email {
+    width: 17%; }
+  .dashboard_title .dashboard_title--adresse {
+    width: 17%; }
+  .dashboard_title .dashboard_title--telephone {
+    width: 17%; }
+  .dashboard_title .dashboard_title--contacter {
+    width: 15%; }
+  .dashboard_title .dashboard_title--action {
+    width: 15%; }
+
+.dashboard_listing {
+  border-top: solid 1px #c6c6c6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .dashboard_listing .dashboard_listing--users {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 17%; }
+    .dashboard_listing .dashboard_listing--users img {
+      width: 35px;
+      height: 35px;
+      border-radius: 100px; }
+    .dashboard_listing .dashboard_listing--users h4 {
+      margin-left: 15px; }
+  .dashboard_listing .dashboard_listing--email {
+    width: 17%; }
+  .dashboard_listing .dashboard_listing--prix {
+    width: 17%; }
+  .dashboard_listing .dashboard_listing--telephone {
+    width: 17%; }
+  .dashboard_listing .dashboard_listing--contacter {
+    width: 15%;
+    display: flex; }
+    .dashboard_listing .dashboard_listing--contacter .calendar {
+      height: 30px;
+      width: 15%; }
+      .dashboard_listing .dashboard_listing--contacter .calendar img {
+        width: 15px;
+        height: 25px; }
+    .dashboard_listing .dashboard_listing--contacter .contacter {
+      margin-left: 15px; }
+    .dashboard_listing .dashboard_listing--contacter button {
+      width: 115px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: #4509d8;
+      border: none;
+      color: #fff; }
+  .dashboard_listing .dashboard_listing--action {
+    width: 15%; }
+  .dashboard_listing .envoyer {
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4509d8;
+    border: none;
+    color: #fff;
+    font-family: "Futura LT"; }
+  .dashboard_listing .modifier {
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4509d8;
+    border: none;
+    color: #fff;
+    font-family: "Futura LT"; }
+  .dashboard_listing .exporter {
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4509d8;
+    border: none;
+    color: #fff;
+    font-family: "Futura LT"; }
+
 /*# sourceMappingURL=main.css.map */
