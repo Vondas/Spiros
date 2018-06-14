@@ -479,8 +479,12 @@ header {
     font-weight: bold; }
   header .droite span {
     font-weight: bold; }
-  header .droite img {
-    width: 40px; }
+  header .droite .bell {
+    width: 20px;
+    margin: 0 10px; }
+  header .droite .personne {
+    width: 25px;
+    margin-right: 10px; }
 
 body {
   margin: 0;

@@ -64,8 +64,13 @@ header {
     span {
     font-weight: bold;
     }
-    img {
-      width: 40px;
+    .bell {
+      width: 20px;
+      margin: 0 10px;
+    }
+    .personne {
+      width: 25px;
+      margin-right: 10px;
     }
   }
 }
