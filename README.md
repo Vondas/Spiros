@@ -45,7 +45,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Changelog :memo:
 
-See the [CHANGELOG](https://choosealicense.com/licenses/mit/) file.
+See the [CHANGELOG](https://github.com/Vondas/Spiros/blob/master/CHANGELOG.md) file.
 
 
 ## To-Do :man:
