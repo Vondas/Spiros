@@ -3,6 +3,18 @@ body {
     font-family: 'Futura', sans-serif;
 }
 
+.page {
+    display: none;
+}
+
+.page--active {
+    display: block;
+}
+
+.container__page {
+    display: flex;
+    justify-content: center;
+}
 
 .container__tab {
     display: inline-flex;
@@ -53,11 +65,6 @@ body {
     width: 30px;
     transform: rotate(180deg);
     cursor: pointer;
-}
-
-.container__page {
-    display: flex;
-    justify-content: center;
 }
 
 .thread {
