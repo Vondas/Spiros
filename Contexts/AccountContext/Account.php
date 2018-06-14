@@ -17,8 +17,10 @@ class Account
     static function verifyUserCredentials($email, $password) {
         self::initUserRepo();
 
-        $user = self::$UserRepository->one($email, $password);
+        $user = self::$UserRepository->one($email);
 
-        return (bool) $user;
+        $hash = $user->password;
+
+        return password_verify($password, $hash);
     }
 }

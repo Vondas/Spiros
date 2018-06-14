@@ -9,13 +9,18 @@ use Symfony\Component\HttpFoundation\Request;
 class LoginController extends BaseController
 {
     public function loginAction () {
+        $method = $_SERVER['REQUEST_METHOD'];
+
+        if ($method === "GET") {
+            echo self::render('login.html.twig');
+            return;
+        }
+
         $request = Request::createFromGlobals();
         $email = $request->get('email');
         $password = $request->get('password');
 
         $areCredentialsValid = Account::verifyUserCredentials($email, $password);
-
-        var_dump($areCredentialsValid);
 
         if ($areCredentialsValid) {
             session_start();
