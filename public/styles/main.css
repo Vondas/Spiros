@@ -531,7 +531,7 @@ header .droite .bell {
   height: 100px;
   background-color: red; }
 
-body {
+.listing_body {
   display: flex;
   justify-content: center; }
 
