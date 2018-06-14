@@ -18,9 +18,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Contexts\\": "Contexts/",
-            "Controllers\\": "Controllers/",
-            "Repositories\\": "Repositories/"
+            "Contexts\\": "Contexts",
+            "Controllers\\": "Controllers",
+            "Repositories\\": "Repositories",
+            "Helpers\\": "Helpers"
         }
     }
 }
