@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.static {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  height: 100%;
+  width: 120px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+.logo {
+  display: block;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.sidebar a img {
+  width: 30px;
+}
+
+.sidebar a p {
+  margin: 5px 0;
+}
+
+.sidebar a:hover {
+  border-left: 3px solid white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 20px #dbdbdb;
+  z-index: 1;
+}
+
+header input {
+  margin-left: 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .droite span {
+  font-weight: bold;
+}
+
+header .droite img {
+  width: 40px;
+}
+
+.content-haut, .content-bas {
+  position: relative;
+  display: flex;
+  top: 85px;
+  left: 110px;
+  width: 100vw;
+  height: 50vh;
+  background-color: #fcfcfc;
+}
+
+.totaux {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 47.5%;
+  font-size: 14px
+}
+
+.wrapper-totaux {
+  position: relative;
+  top: -100px;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  border-radius: 12px;
+}
+
+.total {
+  display: block;
+  margin: auto;
+}
+
+.totaux div p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.content-haut div span {
+  padding: 30px 25px;
+  background-color: #4509d8;
+  border-radius: 50px;
+  color: white;
+}
+
+.new-clients {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 47.5%;
+  height: 100%;
+  font-size: 14px;
+  right: 50px;
+}
+.wrapper-clients {
+  display: block;
+  margin: auto;
+  width: 85%;
+  border-radius: 12px;
+  background-color: white;
+  padding: 10px 20px;
+}
+.client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.client img {
+  width: 40px;
+  height: 40px
+}
+.client p {
+  margin: 0;
+}
+.client button {
+  position: relative;
+  color: white;
+  padding: 10px 30px !important;
+  border: none;
+  border-radius: 5px;
+  background-color: #4509d8;
+  cursor: pointer;
+}
+.auj {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 47.5%;
+  height: 100%;
+  font-size: 14px;
+}
+.today {
+  display: block;
+  margin: auto;
+  width: 85%;
+  position: relative;
+  top: -150px;
+}
+.wrapper-today {
+  display: block;
+  margin: auto;
+  width: 85%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: white;
+  padding: 10px 20px
+}
+.line {
+  display: inline-block;
+}
+.point {
+  border-radius: 5px;
+  background-color: #4509d8;
+  color: white;
+  padding: 10px;
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.point p {
+  margin: 0;
+  font-size: 18px;
+}
+.heure {
+  padding-right: 10px;
+}
+.point h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.last-devis {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 47.5%;
+  font-size: 14px;
+  right: 50px;
+}
+.wrapper-devis {
+  display: block;
+  margin: auto;
+  width: 85%;
+  border-radius: 12px;
+  background-color: white;
+  padding: 10px 20px;
+}
+.wrapper-devis h3 {
+  font-size: 20px;
+}
+.devis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.devis img {
+  width: 40px;
+  height: 40px
+}
+.devis p {
+  margin: 0;
+}
+.devis button {
+  position: relative;
+  color: white;
+  padding: 10px 30px !important;
+  border: none;
+  border-radius: 5px;
+  background-color: #4509d8;
+  cursor: pointer;
+}
