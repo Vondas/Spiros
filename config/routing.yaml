@@ -1,3 +1,6 @@
 hello_custom:
   path: /
   defaults: { _controller: 'Controllers\IndexController::view' }
+list_customers:
+  path: /customers
+  defaults: { _controller: 'Controllers\CustomersController::list' }
