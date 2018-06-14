@@ -786,58 +786,48 @@ body {
   width: 50%;
   line-height: 1.5; }
 
-body {
-  margin: 0;
-  overflow: hidden; }
-
 .static {
   position: absolute;
   display: flex;
   flex-direction: row;
   height: 100vh;
   width: 100vw; }
-
-.sidebar {
-  height: 100%;
-  width: 120px;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  z-index: 2; }
-
-.logo {
-  display: block;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 60px;
-  padding-top: 20px; }
-
-.sidebar a {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
-  margin-bottom: 40px; }
-
-.sidebar a img {
-  width: 30px; }
-
-.sidebar a p {
-  margin: 5px 0; }
-
-.sidebar a:hover {
-  border-left: 3px solid white; }
+  .static .sidebar {
+    height: 100%;
+    width: 120px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    z-index: 2; }
+    .static .sidebar .logo {
+      display: block;
+      width: 85%;
+      margin: auto;
+      margin-bottom: 60px;
+      padding-top: 20px; }
+    .static .sidebar a {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      display: block;
+      margin-bottom: 40px; }
+      .static .sidebar a img {
+        width: 30px; }
+      .static .sidebar a p {
+        margin: 5px 0; }
+      .static .sidebar a:hover {
+        border-left: 3px solid white; }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 85px;
   width: 100%;
   z-index: 1;
   top: 0;
@@ -845,54 +835,222 @@ header {
   overflow-x: hidden;
   box-shadow: 0px 0px 20px #dbdbdb;
   z-index: 1; }
+  header input {
+    margin-left: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold; }
+  header .droite span {
+    font-weight: bold; }
+  header .droite .bell {
+    width: 20px;
+    margin: 0 10px; }
+  header .droite .personne {
+    width: 25px;
+    margin-right: 10px; }
 
-header input {
-  margin-left: 20px;
-  border: none;
-  font-size: 20px;
-  font-weight: bold; }
+body {
+  margin: 0;
+  overflow: hidden; }
 
-header .droite span {
-  font-weight: bold; }
-
-header .droite img {
-  width: 40px; }
-
-header .droite .bell {
-  width: 20px;
-  margin: 0 10px; }
-
-.content {
-  position: relative;
+.wrapper-content {
   display: flex;
-  top: 80px;
-  left: 110px;
-  width: 100vw;
-  height: 100vh; }
+  flex-direction: column; }
+  .wrapper-content .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Futura LT'; }
+  .wrapper-content .content-haut {
+    position: relative;
+    display: flex;
+    top: 85px;
+    left: 110px;
+    width: 100vw;
+    height: 50vh;
+    background-color: #fcfcfc; }
+    .wrapper-content .content-haut .totaux {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 47.5%;
+      font-size: 14px; }
+      .wrapper-content .content-haut .totaux .wrapper-totaux {
+        position: relative;
+        top: -100px;
+        display: flex;
+        margin: auto;
+        width: 50%;
+        border-radius: 12px; }
+        .wrapper-content .content-haut .totaux .wrapper-totaux .total {
+          display: block;
+          margin: auto; }
+      .wrapper-content .content-haut .totaux div p {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px; }
+    .wrapper-content .content-haut div span {
+      padding: 30px 25px;
+      background-color: #4509d8;
+      border-radius: 50px;
+      color: white; }
+    .wrapper-content .content-haut .new-clients {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 47.5%;
+      height: 100%;
+      font-size: 14px;
+      right: 50px; }
+      .wrapper-content .content-haut .new-clients .wrapper-clients {
+        display: block;
+        margin: auto;
+        width: 85%;
+        border-radius: 12px;
+        background-color: white;
+        padding: 10px 20px; }
+        .wrapper-content .content-haut .new-clients .wrapper-clients .client {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px; }
+          .wrapper-content .content-haut .new-clients .wrapper-clients .client img {
+            width: 40px;
+            height: 40px; }
+          .wrapper-content .content-haut .new-clients .wrapper-clients .client p {
+            margin: 0; }
+          .wrapper-content .content-haut .new-clients .wrapper-clients .client button {
+            position: relative;
+            color: white;
+            padding: 10px 30px !important;
+            border: none;
+            border-radius: 5px;
+            background-color: #4509d8;
+            cursor: pointer; }
+      .wrapper-content .content-haut .new-clients .new-clients {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 47.5%;
+        height: 100%;
+        font-size: 14px;
+        right: 50px; }
+        .wrapper-content .content-haut .new-clients .new-clients .wrapper-clients {
+          display: block;
+          margin: auto;
+          width: 85%;
+          border-radius: 12px;
+          background-color: white;
+          padding: 10px 20px; }
+          .wrapper-content .content-haut .new-clients .new-clients .wrapper-clients .client {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px; }
+            .wrapper-content .content-haut .new-clients .new-clients .wrapper-clients .client img {
+              width: 40px;
+              height: 40px; }
+            .wrapper-content .content-haut .new-clients .new-clients .wrapper-clients .client p {
+              margin: 0; }
+            .wrapper-content .content-haut .new-clients .new-clients .wrapper-clients .client button {
+              position: relative;
+              color: white;
+              padding: 10px 30px !important;
+              border: none;
+              border-radius: 5px;
+              background-color: #4509d8;
+              cursor: pointer; }
+  .wrapper-content .content-bas {
+    position: relative;
+    display: flex;
+    top: 85px;
+    left: 110px;
+    width: 100vw;
+    height: 50vh;
+    background-color: #fcfcfc; }
+    .wrapper-content .content-bas .auj {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 47.5%;
+      height: 100%;
+      font-size: 14px; }
+      .wrapper-content .content-bas .auj .today {
+        display: block;
+        margin: auto;
+        width: 85%;
+        position: relative;
+        top: -150px; }
+        .wrapper-content .content-bas .auj .today .wrapper-today {
+          display: block;
+          margin: auto;
+          width: 85%;
+          height: 100%;
+          border-radius: 12px;
+          background-color: white;
+          padding: 10px 20px; }
+          .wrapper-content .content-bas .auj .today .wrapper-today .heure {
+            padding-right: 10px; }
+          .wrapper-content .content-bas .auj .today .wrapper-today .line {
+            display: inline-block; }
+          .wrapper-content .content-bas .auj .today .wrapper-today .point {
+            border-radius: 5px;
+            background-color: #4509d8;
+            color: white;
+            padding: 10px;
+            width: 80%;
+            display: block;
+            margin: auto;
+            margin-bottom: 20px; }
+            .wrapper-content .content-bas .auj .today .wrapper-today .point p {
+              margin: 0;
+              font-size: 18px; }
+            .wrapper-content .content-bas .auj .today .wrapper-today .point h3 {
+              margin: 0;
+              margin-bottom: 5px;
+              font-size: 20px; }
+    .wrapper-content .content-bas .last-devis {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 47.5%;
+      font-size: 14px;
+      right: 50px;
+      top: -50px; }
+      .wrapper-content .content-bas .last-devis .wrapper-devis {
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 85%;
+        border-radius: 12px;
+        background-color: white;
+        padding: 10px 20px; }
+        .wrapper-content .content-bas .last-devis .wrapper-devis h3 {
+          font-size: 20px; }
+        .wrapper-content .content-bas .last-devis .wrapper-devis .devis {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+          font-size: 18px; }
+          .wrapper-content .content-bas .last-devis .wrapper-devis .devis img {
+            width: 40px;
+            height: 40px;
+            margin-right: 30px; }
+          .wrapper-content .content-bas .last-devis .wrapper-devis .devis p {
+            margin: 0; }
+          .wrapper-content .content-bas .last-devis .wrapper-devis .devis span {
+            position: absolute;
+            display: block;
+            right: 20px; }
+          .wrapper-content .content-bas .last-devis .wrapper-devis .devis .green {
+            color: #50b549; }
+          .wrapper-content .content-bas .last-devis .wrapper-devis .devis .attente {
+            color: #cdcdcd; }
+          .wrapper-content .content-bas .last-devis .wrapper-devis .devis .red {
+            color: red; }
 
-.totaux {
+.listing_body {
   display: flex;
-  font-size: 20px; }
-
-.totaux div {
-  margin: 40px; }
-
-.totaux div p {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 40px; }
-
-.content div span {
-  padding: 35px 25px;
-  background-color: #4509d8;
-  border-radius: 50px;
-  color: white; }
-
-.new-clients {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  background-color: red; }
+  justify-content: center; }
 
 .dashboard {
   width: 80%;
@@ -988,5 +1146,199 @@ header .droite .bell {
     border-radius: 2px;
     background-color: #ffffff;
     border: solid 1px #979797; }
+
+.popup-content {
+  position: absolute;
+  display: flex;
+  top: 85px;
+  left: 110px;
+  width: 100vw;
+  height: 100vh;
+  display: none; }
+  .popup-content .popup-formulaire {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .popup-content .popup-formulaire .formulaire {
+      position: relative;
+      margin: auto;
+      width: 500px;
+      height: 70%;
+      background-color: white;
+      padding: 10px 20px;
+      top: -40px;
+      left: -120px;
+      z-index: 2; }
+      .popup-content .popup-formulaire .formulaire form {
+        display: flex;
+        flex-direction: column; }
+        .popup-content .popup-formulaire .formulaire form .cross {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          cursor: pointer; }
+        .popup-content .popup-formulaire .formulaire form .icon-user {
+          margin-top: 60px;
+          margin-bottom: 30px; }
+        .popup-content .popup-formulaire .formulaire form input:focus {
+          outline: none; }
+        .popup-content .popup-formulaire .formulaire form :last-child {
+          margin-top: 0px; }
+        .popup-content .popup-formulaire .formulaire form .champ {
+          margin-bottom: 20px;
+          display: block;
+          margin: auto;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          border: none;
+          width: 80%;
+          border-bottom: 1px solid #d1d1d1;
+          font-size: 20px;
+          padding-bottom: 5px; }
+      .popup-content .popup-formulaire .formulaire h2 {
+        display: block;
+        margin-left: 10%;
+        font-size: 20px;
+        font-weight: bold; }
+      .popup-content .popup-formulaire .formulaire input::placeholder {
+        color: #d1d1d1; }
+      .popup-content .popup-formulaire .formulaire .creer {
+        display: block;
+        margin-left: 10%;
+        margin-top: 40px;
+        width: 200px;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        background-color: #4509d8; }
+
+.popup-formulaire::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; }
+
+.listing_body {
+  display: flex;
+  justify-content: center; }
+
+.dashboard {
+  width: 80%;
+  font-family: "Futura LT";
+  position: relative;
+  top: 85px;
+  left: 110px;
+  margin-top: 45px; }
+
+.dashboard_user {
+  display: flex;
+  justify-content: space-between; }
+  .dashboard_user .button_add {
+    font-family: "Futura LT";
+    width: 255px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #4509d8;
+    border: none;
+    color: #fff; }
+  .dashboard_user h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal; }
+
+.dashboard_title {
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 10px; }
+  .dashboard_title .dashboard_title--client {
+    width: 17%; }
+  .dashboard_title .dashboard_title--email {
+    width: 17%; }
+  .dashboard_title .dashboard_title--adresse {
+    width: 17%; }
+  .dashboard_title .dashboard_title--telephone {
+    width: 17%; }
+  .dashboard_title .dashboard_title--contacter {
+    width: 15%; }
+  .dashboard_title .dashboard_title--action {
+    width: 15%; }
+
+.dashboard_listing {
+  border-top: solid 1px #c6c6c6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .dashboard_listing .dashboard_listing--users {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 17%; }
+    .dashboard_listing .dashboard_listing--users img {
+      width: 35px;
+      height: 35px;
+      border-radius: 100px; }
+    .dashboard_listing .dashboard_listing--users h4 {
+      margin-left: 15px; }
+  .dashboard_listing .dashboard_listing--email {
+    width: 17%; }
+  .dashboard_listing .dashboard_listing--prix {
+    width: 17%; }
+  .dashboard_listing .dashboard_listing--telephone {
+    width: 17%; }
+  .dashboard_listing .dashboard_listing--contacter {
+    width: 15%;
+    display: flex; }
+    .dashboard_listing .dashboard_listing--contacter .calendar {
+      height: 30px;
+      width: 15%; }
+      .dashboard_listing .dashboard_listing--contacter .calendar img {
+        width: 15px;
+        height: 25px; }
+    .dashboard_listing .dashboard_listing--contacter .contacter {
+      margin-left: 15px; }
+    .dashboard_listing .dashboard_listing--contacter button {
+      width: 115px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: #4509d8;
+      border: none;
+      color: #fff; }
+  .dashboard_listing .dashboard_listing--action {
+    width: 15%; }
+  .dashboard_listing .envoyer {
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4509d8;
+    border: none;
+    color: #fff;
+    font-family: "Futura LT"; }
+  .dashboard_listing .modifier {
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4509d8;
+    border: none;
+    color: #fff;
+    font-family: "Futura LT"; }
+  .dashboard_listing .exporter {
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4509d8;
+    border: none;
+    color: #fff;
+    font-family: "Futura LT"; }
 
 /*# sourceMappingURL=main.css.map */

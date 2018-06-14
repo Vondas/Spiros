@@ -1,4 +1,6 @@
 /vendor/
 .idea
+CACHE
 public/CACHE
 .env
+sass/.sass-cache
