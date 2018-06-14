@@ -1,0 +1,131 @@
+.profil {
+  width: 80%;
+  font-family :"Futura LT";
+  position: relative;
+  top: 85px;
+  left: 100px;
+  margin-top: 45px;
+  background-image: url('../public/assets/fluid.svg') no-repeat;
+}
+.profil_personal {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.profil_personal--nom {
+  h1 {
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.8;
+    letter-spacing: normal;
+  }
+}
+.profil_user--title {
+  h3 {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+}
+.profil_personal--contact {
+  margin-left: 32px;
+}
+.profil_personal--button {
+  button {
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #4509d8
+
+  }
+}
+.profil_personal--photo {
+  img {
+    width: 124px;
+    height: 124px;
+    border-radius: 100px;
+  }
+}
+.profil_personal--nom {
+  h1 {
+    margin-top: 20px;
+  }
+}
+.profil_breadcrumb {
+
+}
+
+//** Informations **//
+
+.profil_user {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+.profil_user--infos {
+  width: 35%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+.profil_personal--history {
+  width: 35%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+.profil_user--section {
+  display: flex;
+  padding: 7px;
+  h4 {
+    width: 35%;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+  }
+  p {
+    width: 65%;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+  }
+}
+.mail {
+  margin-top: 30px;
+}
+
+//** Personal **//
+.profil_personal--appel {
+  border-top: solid 1px #ececec;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  img {
+    width: 25px;
+  }
+}
+.profil_personal--client {
+  margin-bottom: 30px;
+  h3 {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+}
