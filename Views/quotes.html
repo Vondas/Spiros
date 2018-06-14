@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/styles/main.css">
+    <title>Spiros</title>
+</head>
+<body>
+    <div>
+        <div class="container__tab">
+            <div class="tab tab--active">Nouveau devis</div>
+            <div class="tab">Liste de mes devis</div>
+        </div>
+        <h1 class="title">
+            Vous allez éditer votre devis à
+            <span class="title__containerInput">
+                <input type="text" class="title__input">
+                <img src="../public/assets/arrow.svg" alt="arrow" class="iconArrow">
+            </span>
+        </h1>
+    </div>
+    <div class="container__page">
+        <div class="thread">
+            <div class="step step">
+                <div class="step__label">
+                    <p class="label__title">Développement</p>
+                    <p class="label__subtitle">Site e-commerce</p>
+                </div>
+                <div class="step__position">
+                    1
+                    <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__label">
+                    <p class="label__title">Développement</p>
+                    <p class="label__subtitle">Site e-commerce</p>
+                </div>
+                <div class="step__position">
+                    2
+                    <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__label">
+                    <p class="label__title">Développement</p>
+                    <p class="label__subtitle">Site e-commerce</p>
+                </div>
+                <div class="step__position">
+                    3
+                    <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">                
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__label">
+                    <p class="label__title">Développement</p>
+                    <p class="label__subtitle">Site e-commerce</p>
+                </div>
+                <div class="step__position">
+                    4
+                    <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">                
+                </div>
+            </div>
+        </div>
+        <div class="container__board">
+            <div class="board">
+                <h2 class="board__title">Prestation</h2>
+                <div class="board__options">
+                    <div class="option">
+                        <span class="option__title">Développement Site e-commerce</span>
+                        <span class="option__price">1500 €</span>
+                    </div>
+                    <div class="option">
+                        <span class="option__title">Développement Site e-commerce</span>
+                        <span class="option__price">500 €</span>
+                    </div>
+                    <div class="option">
+                        <span class="option__title">Développement Site e-commerce</span>
+                        <span class="option__price">1500 €</span>
+                    </div>
+                </div>
+                <div class="total">
+                    <span class="total__title">Total</span>
+                    <span class="total__price">3 500 €</span>
+                </div>
+            </div>
+            <div class="container__button">
+                <button class="button">Exporter</button>
+                <button class="button">Envoyer</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var options = [
+        {title: 'Développement', subtitle: 'Site e-commerce', price: 1500},
+        {title: 'Développement', subtitle: 'Responsive', price: 500},
+        {title: 'Design', subtitle: 'sur mesure', price: 1500},
+        {title: 'Page', subtitle: '0-10', price: 500}
+    ];
+    var steps = document.querySelectorAll('.step');
+    var selectedOptions = [];
+
+    for (let i = 0; i < steps.length; i++) {
+        steps[i].addEventListener('click', function() {
+            steps[i].classList.toggle('step--active');
+            var optionIndex = selectedOptions.findIndex(val => val === i);
+            optionIndex >= 0
+                ? selectedOptions.splice(optionIndex, optionIndex + 1)
+                : selectedOptions.push(i);
+            selectedOptions.sort((a, b) => a - b);
+
+            
+        });
+    }
+
+    var tabs = document.querySelectorAll('.tab');
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', function() {
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('tab--active');
+            }
+            tabs[i].classList.add('tab--active');
+        });
+    }
+
+</script>
+</html>
