@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 </head>
 <body>
+    <main class="listing_body">
     <section class="static">
         <div class="sidebar">
-                    <img class="logo" src="images/logo-blanc.svg" alt="">
+                    <img class="logo" src="../public/assets/logo-blanc.svg" alt="">
                     <a href="#">
                         <img src="../public/assets/home.svg" alt="">
                         <p>Accueil</p>
@@ -30,11 +31,11 @@
                     <input type="search" name="" placeholder="recherche">
                     <div class="droite">
                                 <span>Bonjour Marie</span>
-                                <img src="images/logo.svg" alt="">
-                                <img src="images/logo.svg" alt="">
+																<img class="bell" src="../public/assets/notif.svg" alt="">
+																<img class="personne" src="../public/assets/pp.png" alt="">
                     </div>
                 </header>
-            </section>      
+            </section>
     <section class="dashboard">
         <div class="dashboard_user">
             <h1>Dashboard Users</h1>
@@ -99,5 +100,24 @@
                 </div>
             </div>
     </section>
+		<div class="popup-content">
+		<div class="popup-formulaire">
+			<div class="formulaire">
+				<form class="" action="index.html" method="post">
+					<a class="cross">X</a>
+					<img class="icon-user" src="../public/assets/user.svg" alt="">
+						<h2>Créer un nouvel utilisateur</h2>
+						<input type="text" class="champ" placeholder="Nom">
+						<input type="text" class="champ" placeholder="Prénom">
+						<input type="text" class="champ" placeholder="Adresse mail">
+						<input type="text" class="champ" placeholder="Adresse postale">
+						<input type="text" class="champ" placeholder="Téléphone">
+						<input type="text" class="champ" placeholder="Nom du projet">
+						<input class="creer" type="submit" value="Créer">
+				</form>
+			</div>
+		</div>
+		</div>
+</main>
 </body>
 </html>
