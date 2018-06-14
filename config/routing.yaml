@@ -4,6 +4,15 @@ index:
 login:
   path: /login
   defaults: { _controller: 'Controllers\LoginController::loginAction' }
+clients:
+  path: /clients
+  defaults: { _controller: 'Controllers\ClientsController::viewAction' }
+calendar:
+  path: /calendar
+  defaults: { _controller: 'Controllers\CalendarController::viewAction' }
+estimates:
+  path: /estimates
+  defaults: { _controller: 'Controllers\EstimatesController::viewAction' }
 list_customers:
   path: /customers
   defaults: { _controller: 'Controllers\CustomersController::list' }
