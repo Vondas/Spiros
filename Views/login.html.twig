@@ -40,10 +40,10 @@
     <main class="connexion_popular">
         <div class="connexion">
             <div class="connexion_create">
-                <form class="connexion_form" action="login">
+                <form class="connexion_form" action="login" method="POST">
                     <h2>Créer un compte</h2>
-                    <input type="text" placeholder="adresse mail" class="mail" id="login">
-                    <input type="text" placeholder="mot de passe" class="input" id="mdp">
+                    <input type="text" placeholder="adresse mail" class="mail" id="login" name="email">
+                    <input type="text" placeholder="mot de passe" class="input" id="mdp" name="password">
                     <input type="text" placeholder="confimer votre mot de passe" class="input" id="mdpconfirmation">
                     <button class="connexion_create__créer">Connexion</button>
                 </form>

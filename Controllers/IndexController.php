@@ -2,25 +2,17 @@
 
 namespace Controllers;
 
-use Repositories\TestRepository;
 
 class IndexController extends BaseController
 {
-    private static $test = NULL;
+    public function viewAction () {
+        session_start();
 
-    private function initTestRepository() {
-        if (self::$test === NULL) {
-            self::$test = new TestRepository();
+        if (isset($_SESSION["USER"])) {
+            echo $this->render('dashboard.html.twig');
+        } else {
+            header("Location: /login");
+            exit();
         }
-    }
-
-    public function view () {
-        $this->initTestRepository();
-
-        $data = self::$test->all();
-
-        echo $this->render('index.html.twig', [
-            "test" => $data
-        ]);
     }
 }

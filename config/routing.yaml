@@ -1,6 +1,9 @@
-hello_custom:
+index:
   path: /
-  defaults: { _controller: 'Controllers\IndexController::view' }
+  defaults: { _controller: 'Controllers\IndexController::viewAction' }
+login:
+  path: /login
+  defaults: { _controller: 'Controllers\LoginController::loginAction' }
 list_customers:
   path: /customers
   defaults: { _controller: 'Controllers\CustomersController::list' }
