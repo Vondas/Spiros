@@ -4,45 +4,66 @@
 {% endblock %}
 {% block body %}
     <main class="connexion_popular">
-        <div class="connexion">
-            <div class="connexion_create">
-                <form class="connexion_form" action="login" method="POST">
-                    <h2>Créer un compte</h2>
-                    <input type="text" placeholder="adresse mail" class="mail" id="login" name="email">
-                    <input type="text" placeholder="mot de passe" class="input" id="mdp" name="password">
-                    <input type="text" placeholder="confimer votre mot de passe" class="input" id="mdpconfirmation">
-                    <button class="connexion_create__créer">Connexion</button>
-                </form>
+        <div class="pageContent">
+            <div class="connexion">
+                <div>
+                    <div class="container__tab">
+                        <div class="tab tab--active">Se connecter</div>
+                        <div class="tab">Créer un compte</div>
+                    </div>
+                <div class="connexion_login formTab formTab--active">
+                    <form class="connexion_login_form" action="login" method="POST">
+                            <input type="email" placeholder="Adresse mail" class="mail" id="login" name="email">
+                            <input type="password" placeholder="Mot de passe" class="input" id="mdp" name="password">
+                            <button class="connexion_login_connexion button">Connexion</button>
+                    </form>
+                </div>
+                <div class="connexion_create formTab">
+                    <form class="connexion_form" action="signup" method="POST">
+                        <input type="email" placeholder="Adresse mail" class="mail" id="login" name="email">
+                        <input type="password" placeholder="Mot de passe" class="input" id="mdp" name="password">
+                        <input type="password" placeholder="Confimer votre mot de passe" class="input" id="mdpconfirmation" name="password_confirmation">
+                        <button class="connexion_create__créer button">Créer un compte</button>
+                    </form>
+                </div>
+                </div>
             </div>
-            <div class="connexion_login">
-                <form class="connexion_login_form" action="">
-                        <h2>Se connecter</h2>
-                        <input type="text" placeholder="adresse mail" class="mail" id="login">
-                        <input type="text" placeholder="mot de passe" class="input" id="mdp">
-                        <button class="connexion_login_connexion">Créer</button>
-                </form>
+            <div class="popular">
+                <div class="popular_logo">
+                    <img src="assets/logo.svg"
+                        alt="logo"
+                        height="100px"
+                        width="150px"> 
+                </div>
+                <div class="popular_text">
+                    <h3>Popular Uses Of The Internet</h3>
+                    <p>Okay, you’ve decided you want to make money with Affiliate Marketing.
+                        So, you join some affiliate programs and start submitting free ads to newsletters and free advertising classifieds sites.
+                        You’re going to make BIG money now — right?</p>
+
+                        <p>Nope! Sorry! Just sending out a few ads is not going to do it.
+                        Not if you want to be a real success. You must first </p>
+                </div>
             </div>
         </div>
-        <div class="popular">
-            <div class="popular_logo">
-                <img src="assets/logo.svg"
-                     alt="logo"
-                     height="100px"
-                     width="150px"> 
-            </div>
-            <div class="popular_text">
-                <h3>Popular Uses Of The Internet</h3>
-                <p>Okay, you’ve decided you want to make money with Affiliate Marketing.
-                    So, you join some affiliate programs and start submitting free ads to newsletters and free advertising classifieds sites.
-                    You’re going to make BIG money now — right?</p>
-
-                    <p>Nope! Sorry! Just sending out a few ads is not going to do it.
-                    Not if you want to be a real success. You must first </p>
-            </div>
-            <div class="popular_fluid">
-                    <img src="assets/fluid.svg"
-                    alt="">
-            </div>
+        <div class="popular_fluid">
+            <img src="assets/fluid.svg"
+            alt="">
         </div>
     </main>
+    <script>
+        var formTab = document.querySelectorAll('.formTab');
+        var tabs = document.querySelectorAll('.tab');
+
+        for (let i = 0; i < tabs.length; i++) {
+            tabs[i].addEventListener('click', function () {
+                for (let i = 0; i < tabs.length; i++) {
+                    formTab[i].classList.remove('formTab--active');
+                    tabs[i].classList.remove('tab--active');
+                }
+                formTab[i].classList.add('formTab--active');
+                tabs[i].classList.add('tab--active');
+            });
+        }
+    </script>
 {% endblock %}

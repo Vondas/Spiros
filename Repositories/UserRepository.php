@@ -6,7 +6,7 @@ namespace Repositories;
 
 class UserRepository extends BaseRepository
 {
-    public function one($email) {
+    public function one(string $email) {
         $sql = "SELECT
         `email`,
         `password`
@@ -19,12 +19,40 @@ class UserRepository extends BaseRepository
 
         $stmt = self::$pdo->prepare($sql);
         $stmt->bindValue(":email", htmlentities($email));
-        $stmt->execute();
 
-        if($stmt->errorCode() !== '00000') {
-            die($stmt->errorInfo()[2]);
+        try {
+            $stmt->execute();
+        } catch (\PDOException $e) {
+            if($stmt->errorCode() !== '00000') {
+                return FALSE;
+            }
         }
 
         return $stmt->fetch(\PDO::FETCH_OBJ);
+    }
+
+    public function create(string $email, string $hash) {
+        $sql = "INSERT INTO `user`(
+        `email`,
+        `password`)
+        VALUES (
+        :email,
+        :password)
+        ;";
+
+        $stmt = self::$pdo->prepare($sql);
+        $stmt->bindValue(':email', htmlspecialchars($email));
+        $stmt->bindValue(':password', $hash);
+
+        try {
+            $stmt->execute();
+
+        } catch (\PDOException $e) {
+            if($stmt->errorCode() !== '00000') {
+                return FALSE;
+            }
+        }
+
+        return (bool) $stmt->rowCount();
     }
 }

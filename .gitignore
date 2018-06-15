@@ -1,5 +1,8 @@
 /vendor/
 .idea
+CACHE
 public/CACHE
 .env
 sass/.sass-cache
+.sass-cache
+.DS_Store

@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    Calendar
+{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style>
+        .main_ {
+            position: relative;
+            top: 85px;
+            left: 110px;
+        }
+
+        .offset_ {
+            padding: 20px 0 0 20px;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    {{ include('static.html.twig') }}
+    <div class="main_"><p class="offset_">Cette feature n'est pas encore disponible.</p></div>
+{% endblock %}

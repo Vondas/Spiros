@@ -1,11 +1,13 @@
 @import 'base/reset';
 @import 'base/font';
+@import 'base/template';
 
 //pages
-@import 'pages/createProfil';
-@import 'pages/createProfil2';
+@import 'pages/index';
+@import 'pages/quotes';
 @import 'pages/index';
 @import 'pages/sidebar-header';
 @import 'pages/dashboard';
 @import 'pages/listing';
 @import 'pages/listingDevis';
+@import 'pages/userProfil';
