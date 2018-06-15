@@ -849,10 +849,6 @@ header {
     width: 25px;
     margin-right: 10px; }
 
-body {
-  margin: 0;
-  overflow: hidden; }
-
 .wrapper-content {
   display: flex;
   flex-direction: column; }
