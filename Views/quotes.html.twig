@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../public/styles/main.css">
-    <title>Spiros</title>
-</head>
-<body>
+{% extends "base.html.twig" %}
+{% block title %}
+Quotes
+{% endblock %}
+{% block body %}
+    {{ include('static.html.twig') }}
     <div>
         <div class="container__tab">
             <div class="tab tab--active">Nouveau devis</div>
@@ -19,7 +15,7 @@
             Vous allez éditer votre devis à
             <span class="title__containerInput">
                 <input type="text" class="title__input">
-                <img src="../public/assets/arrow.svg" alt="arrow" class="iconArrow">
+                <img src="assets/arrow.svg" alt="arrow" class="iconArrow">
             </span>
         </h1>
         <div class="container__page">
@@ -31,7 +27,7 @@
                     </div>
                     <div class="step__position">
                         1
-                        <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">
+                        <img src="assets/check-green.svg" alt="check" class="step__iconCheck">
                     </div>
                 </div>
                 <div class="step">
@@ -41,7 +37,7 @@
                     </div>
                     <div class="step__position">
                         2
-                        <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">
+                        <img src="assets/check-green.svg" alt="check" class="step__iconCheck">
                     </div>
                 </div>
                 <div class="step">
@@ -51,7 +47,7 @@
                     </div>
                     <div class="step__position">
                         3
-                        <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">                
+                        <img src="assets/check-green.svg" alt="check" class="step__iconCheck">
                     </div>
                 </div>
                 <div class="step">
@@ -61,7 +57,7 @@
                     </div>
                     <div class="step__position">
                         4
-                        <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">                
+                        <img src="assets/check-green.svg" alt="check" class="step__iconCheck">
                     </div>
                 </div>
             </div>
@@ -93,7 +89,7 @@
         </div>
         <div class="dashboard_listing">
             <div class="dashboard_listing--users">
-                <img src="../public/assets/kaiba.jpg" alt="">
+                <img src="assets/kaiba.jpg" alt="">
                 <h4>Rocco Li Puma</h4>
             </div>
             <div class="dashboard_listing--email">
@@ -107,17 +103,18 @@
             </div>
             <div class="dashboard_listing--contacter">
                 <button class="calendar">
-                    <img src="../public/assets/calendar.svg" alt="">
+                    <img src="assets/calendar.svg" alt="">
                 </button>
                 <button class="contacter">contacter</button>
             </div>
             <div class="dashboard_listing--actions">
                 <input type="checkbox" class="dashboard_listing--checkbox" name="" id="">
-                <img src="../public/assets/Edit-Icon.svg" alt="">
+                <img src="assets/Edit-Icon.svg" alt="">
             </div>
         </div>
     </div>
-</body>
+{% endblock %}
+{% block scripts %}
 <script>
     var pages = document.querySelectorAll('.page');
     var tabs = document.querySelectorAll('.tab');
@@ -196,4 +193,4 @@
         return numb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 </script>
-</html>
+{% endblock %}

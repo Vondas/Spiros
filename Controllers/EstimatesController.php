@@ -7,6 +7,6 @@ namespace Controllers;
 class EstimatesController extends BaseController
 {
     public function viewAction() {
-        echo $this->render('estimates.html.twig');
+        echo $this->render('quotes.html.twig');
     }
 }
