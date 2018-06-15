@@ -10,6 +10,9 @@ signup:
 clients:
   path: /clients
   defaults: { _controller: 'Controllers\ClientsController::viewAction' }
+clients_create:
+  path: /clients/create
+  defaults: { _controller: 'Controllers\ClientsController::createAction' }
 calendar:
   path: /calendar
   defaults: { _controller: 'Controllers\CalendarController::viewAction' }

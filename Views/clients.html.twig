@@ -8,84 +8,79 @@
     <section class="dashboard">
         <div class="dashboard_user">
             <h1>Mes clients</h1>
-            <button>Ajouter un client</button>
+            <button id="js_add_customer">Ajouter un client</button>
         </div>
-        <div class="dashboard_title">
-            <h2 class="dashboard_title--client">Client</h2>
-            <h2 class="dashboard_title--email">Email</h2>
-            <h2 class="dashboard_title--adresse">Adresse</h2>
-            <h2 class="dashboard_title--telephone">Téléphone</h2>
-            <h2 class="dashboard_title--contacter">Contacter</h2>
-            <h2 class="dashboard_title--action">Actions</h2>
-        </div>
-        <div class="dashboard_listing">
-            <div class="dashboard_listing--users">
-                <img src="../public/assets/kaiba.jpg" alt="">
-                <h4>Rocco Li Puma</h4>
+        {% if customers %}
+            <div class="dashboard_title">
+                <h2 class="dashboard_title--client">Client</h2>
+                <h2 class="dashboard_title--email">Email</h2>
+                <h2 class="dashboard_title--adresse">Adresse</h2>
+                <h2 class="dashboard_title--telephone">Téléphone</h2>
+                <h2 class="dashboard_title--contacter">Contacter</h2>
+                <h2 class="dashboard_title--action">Actions</h2>
             </div>
-            <div class="dashboard_listing--email">
-                <p>wesley.lipuma@coucou.fr</p>
-            </div>
-            <div class="dashboard_listing--adresse">
-                <p>29 rue du Progrés 93100</p>
-            </div>
-            <div class="dashboard_listing--telephone">
-                <p>06.55.68.90.65</p>
-            </div>
-            <div class="dashboard_listing--contacter">
-                <button class="calendar">
-                    <img src="../public/assets/calendar.svg" alt="">
-                </button>
-                <button class="contacter">contacter</button>
-            </div>
-            <div class="dashboard_listing--actions">
-                <input type="checkbox" class="dashboard_listing--checkbox" name="" id="">
-                <img src="../public/assets/Edit-Icon.svg" alt="">
-            </div>
-        </div>
-        <div class="dashboard_listing">
+            {% for customer in customers %}
+                <div class="dashboard_listing">
                 <div class="dashboard_listing--users">
-                    <img src="../public/assets/kaiba.jpg" alt="">
-                    <h4>Rocco Li Puma</h4>
+                <img src="assets/kaiba.jpg" alt="">
+                <h4>{{ customer.firstname }} {{ customer.lastname }}</h4>
                 </div>
                 <div class="dashboard_listing--email">
-                    <p>wesley.lipuma@coucou.fr</p>
+                <p>{{ customer.email }}</p>
                 </div>
                 <div class="dashboard_listing--adresse">
-                    <p>29 rue du Progrés 93100</p>
+                <p>{{ customer.address }}</p>
                 </div>
                 <div class="dashboard_listing--telephone">
-                    <p>06.55.68.90.65</p>
+                <p>{{ customer.phone_number }}</p>
                 </div>
                 <div class="dashboard_listing--contacter">
-                    <button class="calendar">
-                        <img src="../public/assets/calendar.svg" alt="">
-                    </button>
-                    <button class="contacter">contacter</button>
+                <button class="calendar">
+                <img src="assets/calendar.svg" alt="">
+                </button>
+                <button class="contacter">contacter</button>
                 </div>
                 <div class="dashboard_listing--actions">
-                    <input type="checkbox" class="dashboard_listing--checkbox" name="" id="">
-                    <img src="../public/assets/Edit-Icon.svg" alt="">
+                <input type="checkbox" class="dashboard_listing--checkbox" name="" id="">
+                <img src="assets/Edit-Icon.svg" alt="">
                 </div>
-            </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div>No Clients yet</div>
+        {% endif %}
     </section>
-		<div class="popup-content">
+		<div class="popup-content" id="js_popup">
 		<div class="popup-formulaire">
 			<div class="formulaire">
-				<form class="" action="index.html" method="post">
-					<a class="cross">X</a>
-					<img class="icon-user" src="../public/assets/user.svg" alt="">
+				<form class="" action="clients/create" method="POST">
+					<a class="cross" id="js_popup_close">X</a>
+					<img class="icon-user" src="assets/user.svg" alt="">
 						<h2>Créer un nouvel utilisateur</h2>
-						<input type="text" class="champ" placeholder="Nom">
-						<input type="text" class="champ" placeholder="Prénom">
-						<input type="text" class="champ" placeholder="Adresse mail">
-						<input type="text" class="champ" placeholder="Adresse postale">
-						<input type="text" class="champ" placeholder="Téléphone">
-						<input type="text" class="champ" placeholder="Nom du projet">
+						<input type="text" class="champ" placeholder="Nom" name="lastname">
+						<input type="text" class="champ" placeholder="Prénom" name="firstname">
+						<input type="text" class="champ" placeholder="Adresse mail" name="email">
+						<input type="text" class="champ" placeholder="Adresse postale" name="address">
+						<input type="text" class="champ" placeholder="Téléphone" name="phone_number">
+						<input type="text" class="champ" placeholder="Nom du projet" name="project">
 						<input class="creer" type="submit" value="Créer">
 				</form>
 			</div>
 		</div>
 		</div>
 </main>
+{% endblock %}
+{% block scripts %}
+    <script>
+        js_add_customer.addEventListener("click", openPopup);
+        js_popup_close.addEventListener("click", closePopup);
+
+        function openPopup() {
+            js_popup.classList.add("active");
+        }
+
+        function closePopup() {
+            js_popup.classList.remove("active");
+        }
+    </script>
 {% endblock %}
