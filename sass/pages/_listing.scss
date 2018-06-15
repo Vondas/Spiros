@@ -13,6 +13,7 @@
 .dashboard_user {
     display: flex;
     justify-content: space-between;
+
     button {
         font-family: "Futura LT";
         width: 255px;
@@ -22,6 +23,7 @@
         border: none;
         color: #fff;
     }
+
     h1 {
         font-size: 20px;
         font-weight: bold;
@@ -35,6 +37,7 @@
     margin-top: 30px;
     display: flex;
     margin-bottom: 10px;
+
     .dashboard_title--client {
         width: 17%;
     }
@@ -54,7 +57,7 @@
         width: 15%;
     }
 }
-.dashboard_listing {
+.dashboard__listing {
     border-top: solid 1px #c6c6c6;
     padding-top: 10px;
     padding-bottom: 10px;

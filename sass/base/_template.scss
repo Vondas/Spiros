@@ -1,0 +1,41 @@
+.button {
+    position: relative;
+    top: 3px;
+    left: 4px;
+    width: 195px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4509d8;
+    border: 1px solid #4509d8;
+    cursor: pointer;
+    outline: none;
+    transition: .25s;
+
+    &:after {
+        content: "";
+        display: block;
+        z-index: -1;
+        position: absolute;
+        top: -4px;
+        left: -3px;
+        width: 100%;
+        height: 48px;
+        border: 1px solid #4509d8;
+        border-radius: 6px;
+        background-color: transparent;
+        transition: .25s;
+    }
+
+    &:hover {
+        top: 0;
+        left: 0;
+    }
+    &:hover::after {
+        top: 0;
+        left: 0;
+    }
+}

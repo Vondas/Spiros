@@ -51,9 +51,172 @@ table {
 }
 
 @font-face {
+<<<<<<< HEAD
+  font-family: 'Futura LT';
+  src: url(FUTURALT.TTF); }
+.button {
+  position: relative;
+  top: 3px;
+  left: 4px;
+  width: 195px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4509d8;
+  border: 1px solid #4509d8;
+  cursor: pointer;
+  outline: none;
+  transition: .25s; }
+  .button:after {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: -4px;
+    left: -3px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #4509d8;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: .25s; }
+  .button:hover {
+    top: 0;
+    left: 0; }
+  .button:hover::after {
+    top: 0;
+    left: 0; }
+
+/** Connexion **/
+.connexion_popular {
+  display: flex; }
+
+.connexion {
+  margin-top: 55px;
+  width: 50%; }
+
+.connexion_create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.connexion_create h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal; }
+
+.connexion_create h2::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: relative;
+  left: -115%;
+  background-color: #ececec;
+  top: 15px; }
+
+.connexion_login {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.connexion_login h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal; }
+
+.connexion_login h2::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: relative;
+  left: -115%;
+  background-color: #ececec;
+  top: 15px; }
+
+.connexion_login_form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Futura LT'; }
+
+.connexion_form {
+  display: flex;
+  flex-direction: column; }
+
+.connexion input {
+  width: 313px; }
+
+.connexion button {
+  margin-top: 40px;
+  width: 255px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #4509d8;
+  border: solid 1px #4509d8;
+  color: #fff;
+  font-family: "Futura LT"; }
+
+.connexion input {
+  margin-top: 50px;
+  border: none;
+  border-bottom: solid 1px #ececec; }
+
+/** Popular **/
+.popular {
+  width: 50%;
+  justify-content: flex-end;
+  margin-top: 50px; }
+
+.popular_logo {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 70px; }
+
+.popular_text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+  position: relative; }
+
+.popular_image {
+  position: relative;
+  width: 50%; }
+
+.popular_fluid img {
+  position: absolute;
+  top: 100px;
+  width: 40%;
+  right: 0px; }
+
+.popular_text img {
+  width: 80%; }
+
+.popular_text h3 {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.1px; }
+
+.popular_text p {
+  margin-top: 16px;
+  width: 50%;
+  line-height: 1.5; }
+
+=======
   font-family: "Futura LT";
   src: url(FUTURALT.TTF);
 }
+>>>>>>> 98a19590bf0b0c8208785a3ba36252f263fe6137
 /** Connexion **/
 .connexion_popular {
   display: flex;
@@ -354,6 +517,211 @@ table {
   line-height: 1.5;
 }
 
+body {
+  background-color: #FCFCFC;
+  font-family: 'Futura', sans-serif; }
+
+.page {
+  display: none; }
+
+.page--active {
+  display: block; }
+
+.container__page {
+  display: flex;
+  justify-content: center; }
+
+.container__tab {
+  display: inline-flex;
+  margin: 50px 0 25px 100px;
+  border-bottom: 1px solid #000; }
+
+.tab {
+  margin-bottom: 1px;
+  padding: 5px 25px;
+  border-bottom: solid 3px transparent;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222222;
+  cursor: pointer; }
+
+.tab--active {
+  border-bottom: solid 3px #e71d7c; }
+
+.title {
+  margin: 50px 100px;
+  font-family: 'Futura', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222222; }
+
+.title__containerInput {
+  position: relative; }
+
+.title__input {
+  padding: 5px;
+  width: 150px;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 17px;
+  background-color: transparent;
+  outline: none; }
+
+.iconArrow {
+  position: absolute;
+  right: 0;
+  top: -8px;
+  width: 30px;
+  transform: rotate(180deg);
+  cursor: pointer; }
+
+.thread {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 30%;
+  height: 100%;
+  font-family: 'Futura', sans-serif; }
+  .thread::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: .7;
+    background-color: #000; }
+
+.step {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  margin: 25px; }
+  .step:first-of-type {
+    margin-top: 50px; }
+  .step:last-of-type {
+    margin-bottom: 50px; }
+
+.step__position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #4509d8;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 #dde0ec;
+  background-color: #ffffff;
+  color: #4509d8;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color .3s; }
+  .step__position::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    bottom: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: #000; }
+
+.step:first-of-type .step__position::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 0px;
+  bottom: 0px;
+  width: 0px;
+  height: 0px;
+  background-color: transparent; }
+
+.step__iconCheck {
+  width: 0;
+  position: relative;
+  top: 4px;
+  opacity: 0;
+  transition: opacity .3s; }
+
+.step__label {
+  display: block;
+  position: absolute;
+  right: calc(100% + 35px);
+  width: 150px;
+  text-align: right;
+  font-family: 'FuturaLT', sans-serif;
+  font-size: 14px;
+  color: #222222; }
+
+.label__title {
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+.label__subtitle {
+  margin-top: 5px; }
+
+.step--active .step__position {
+  border: solid 1px #78ca3c;
+  color: transparent;
+  font-size: 0; }
+.step--active .step__iconCheck {
+  width: 35px;
+  opacity: 1; }
+
+.container__board {
+  width: 30%; }
+
+.board {
+  padding: 20px 30px;
+  min-height: 300px;
+  border-radius: 12px;
+  background-color: #fff; }
+
+.board__title {
+  font-family: 'FuturaLT', sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  color: #222222; }
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'FuturaLT', sans-serif;
+  font-size: 18px;
+  color: #222222;
+  border-bottom: solid 1px #ececec;
+  padding-bottom: 20px;
+  margin-top: 20px; }
+  .option:first-of-type {
+    margin-top: 40px; }
+
+.option__title {
+  font-weight: 700; }
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'FuturaLT', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.9px;
+  color: #4509d8; }
+
+.total__title {
+  font-size: 20px; }
+
+.container__button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px; }
+
 /** Connexion **/
 .connexion_popular {
   display: flex;
@@ -572,11 +940,14 @@ header .droite .personne {
   margin-right: 10px;
 }
 
+<<<<<<< HEAD
+=======
 body {
   margin: 0;
   overflow: hidden;
 }
 
+>>>>>>> 98a19590bf0b0c8208785a3ba36252f263fe6137
 .wrapper-content {
   display: flex;
   flex-direction: column;
@@ -871,12 +1242,58 @@ body {
   width: 15%;
 }
 
-.dashboard_listing {
+.dashboard__listing {
   border-top: solid 1px #c6c6c6;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
   display: flex;
+<<<<<<< HEAD
+  align-items: center; }
+  .dashboard__listing .dashboard_listing--users {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 17%; }
+    .dashboard__listing .dashboard_listing--users img {
+      width: 35px;
+      height: 35px;
+      border-radius: 100px; }
+    .dashboard__listing .dashboard_listing--users h4 {
+      margin-left: 15px; }
+  .dashboard__listing .dashboard_listing--email {
+    width: 17%; }
+  .dashboard__listing .dashboard_listing--adresse {
+    width: 17%; }
+  .dashboard__listing .dashboard_listing--telephone {
+    width: 17%; }
+  .dashboard__listing .dashboard_listing--contacter {
+    width: 15%;
+    display: flex; }
+    .dashboard__listing .dashboard_listing--contacter .calendar {
+      height: 30px;
+      width: 15%; }
+      .dashboard__listing .dashboard_listing--contacter .calendar img {
+        width: 15px;
+        height: 25px; }
+    .dashboard__listing .dashboard_listing--contacter .contacter {
+      margin-left: 15px; }
+    .dashboard__listing .dashboard_listing--contacter button {
+      width: 115px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: #4509d8;
+      border: none;
+      color: #fff; }
+  .dashboard__listing .dashboard_listing--action {
+    width: 15%; }
+  .dashboard__listing .dashboard_listing--checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #979797; }
+=======
   align-items: center;
 }
 .dashboard_listing .dashboard_listing--users {
@@ -935,6 +1352,7 @@ body {
   background-color: #ffffff;
   border: solid 1px #979797;
 }
+>>>>>>> 98a19590bf0b0c8208785a3ba36252f263fe6137
 
 .popup-content {
   position: absolute;
