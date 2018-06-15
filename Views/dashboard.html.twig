@@ -4,22 +4,22 @@
 {% endblock %}
 {% block body %}
 {{ include('static.html.twig') }}
-<section class="wrapper-content">
-	<div class="content-haut">
-		<div class="totaux">
-			<div class="wrapper-totaux">
+<section class="wrapper__upSide">
+	<div class="upSide">
+		<div class="wrapper__totals">
+			<div class="totals">
 				<div class="total">
-					<p>Total</p>
-					<span>8550</span>
+					<p class="total__title">Total des gains </p>
+					<span class="total__value">8550 €</span>
 				</div>
 				<div class="total">
-					<p>Total</p>
-					<span>8550</span>
+					<p class="total__title">Total devis</p>
+					<span class="total__value">4500 $</span>
 				</div>
 			</div>
 		</div>
-		<div class="new-clients">
-			<div class="wrapper-clients">
+		<div class="new__clients">
+			<div class="wrapper__clients">
 				<h2 class="title">Nouveaux clients</h2>
 				<div class="client">
 					<img src="assets/pp.png" alt="">
@@ -52,14 +52,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="content-bas">
-		<div class="auj">
-			<div class="today">
-				<div class="wrapper-today">
+	<div class="downSide">
+		<div class="agenda__wrapper">
+			<div class="agenda">
+				<div class="agenda__today">
 					<h2 class="title">Nouveaux clients</h2>
 					<div class="point">
 						<h3>Point</h3>
-						<p class="line heure">15h30</p>
+						<p class="line hour">15h30</p>
 						<p class="line">Ritika Singh sur ote</p>
 					</div>
 					<div class="point">
@@ -80,25 +80,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="last-devis">
-			<div class="wrapper-devis">
+		<div class="last__quotes">
+			<div class="wrapper__quotes">
 				<h2 class="title">Derniers devis</h2>
-				<div class="devis">
+				<div class="quote">
 					<img src="assets/pp.png" alt="">
 					<p>T Ritika Singh</p>
 					<span class="green">Accepté</span>
 				</div>
-				<div class="devis">
+				<div class="quote">
 					<img src="assets/pp.png" alt="">
 					<p>T Ritika Singh</p>
 					<span class="attente">En attente</span>
 				</div>
-				<div class="devis">
+				<div class="quote">
 					<img src="assets/pp.png" alt="">
 					<p>T Ritika Singh</p>
 					<span class="red">Refusé</span>
 				</div>
-				<div class="devis">
+				<div class="quote">
 					<img src="assets/pp.png" alt="">
 					<p>T Ritika Singh</p>
 					<span class="green">Accepté</span>

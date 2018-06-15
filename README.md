@@ -15,21 +15,49 @@
 ## Installing
 
 ### Requirements
-* PHP 7.1+
-* JavaScript
-* MySQL 5.7 ou 8.0 ou PostgreSQL 10
-
-```sh
-$ code goes here
-```
+* PHP 7.2+
+* Composer
+* MySQL 5.7+
+* Sass
 
 # Getting Started
+Clone the project and install the dependencies:
 
-> **[?]** What does this project stands for?
+```sh
+# /MyProjects
+git clone https://github.com/Vondas/Spiros.git
+cd Spiros
+composer install
+```
+
+Create a database named "spiros" with our seed sql script
+```sh
+# /Spiros
+mysql -u username -p < seed/bdd.sql
+$ Enter password: password
+```
+
+Compile the scss files to css:
+```sh
+# /Spiros
+sass sass:public/styles
+```
 
 ## Usage
 
-> **[?]** How to use it ? 
+Run a basic php server, serving the public directory
+```sh
+# /Spiros/public
+php -S localhost:8000
+```
+
+Watch scss files to compile on changes
+```sh
+# /Spiros
+sass --watch sass:public/styles
+```
+
+Open your browser at `localhost:8000`, you should now be on the index page.
 
 ## Contributing
 

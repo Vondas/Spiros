@@ -57,7 +57,7 @@
         width: 15%;
     }
 }
-.dashboard__listing {
+.dashboard_listing {
     border-top: solid 1px #c6c6c6;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -121,18 +121,18 @@
             background-color: #ffffff;
             border: solid 1px #979797;
         }
-
-
 }
 
 .popup-content{
   position: absolute;
-  display: flex;
   top: 85px;
   left: 110px;
   width: 100vw;
   height: 100vh;
   display: none;
+  &.active {
+    display: block;
+  }
   .popup-formulaire {
     display: flex;
     align-items: center;
@@ -166,7 +166,7 @@
           outline:  none;
         }
         :last-child {
-          margin-top: 0px;
+          margin: -10px auto 0 auto;
         }
         .champ {
           margin-bottom: 20px;
