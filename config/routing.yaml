@@ -4,6 +4,9 @@ index:
 login:
   path: /login
   defaults: { _controller: 'Controllers\LoginController::loginAction' }
+logout:
+  path: /logout
+  defaults: { _controller: 'Controllers\LogoutController::logoutAction' }
 signup:
   path: /signup
   defaults: { _controller: 'Controllers\SignupController::signupAction' }

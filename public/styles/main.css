@@ -919,6 +919,15 @@ body {
   line-height: 1.5;
 }
 
+.off-r-5 {
+  margin-right: 5px;
+}
+
+.no-style {
+  color: #222;
+  text-decoration: none;
+}
+
 .static {
   position: absolute;
   display: flex;
