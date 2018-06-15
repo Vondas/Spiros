@@ -13,6 +13,9 @@ calendar:
 estimates:
   path: /estimates
   defaults: { _controller: 'Controllers\EstimatesController::viewAction' }
+profile:
+  path: /profile
+  defaults: { _controller: 'Controllers\ProfileController::viewAction' }
 list_customers:
   path: /customers
   defaults: { _controller: 'Controllers\CustomersController::list' }

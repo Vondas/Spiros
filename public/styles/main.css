@@ -503,7 +503,6 @@ table {
   flex-direction: row;
   height: 100vh;
   width: 100vw;
-  background-color: #fcfcfc;
 }
 .static .sidebar {
   height: 100%;
@@ -511,7 +510,7 @@ table {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #111;
   overflow-x: hidden;
   z-index: 2;
 }
@@ -1177,9 +1176,9 @@ body {
   font-family: "Futura LT";
   position: relative;
   top: 85px;
-  left: 100px;
-  margin-top: 45px;
-  background-image: url("../public/assets/fluid.svg") no-repeat;
+  left: 135px;
+  padding-top: 45px;
+  background-image: url("/assets/fluid.svg") no-repeat;
 }
 
 .profil_personal {
