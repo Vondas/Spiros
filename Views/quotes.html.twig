@@ -1,125 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../public/styles/main.css">
-    <title>Spiros</title>
-</head>
-<body>
-    <main class="main__quote">
-        <div>
-            <div class="container__tab">
-                <div class="tab tab--active">Nouveau devis</div>
-                <div class="tab">Liste de mes devis</div>
-            </div>
+{% extends "base.html.twig" %}
+{% block title %}
+Quotes
+{% endblock %}
+{% block body %}
+    {{ include('static.html.twig') }}
+    <div>
+        <div class="container__tab">
+            <div class="tab tab--active">Nouveau devis</div>
+            <div class="tab">Liste de mes devis</div>
         </div>
-        <div class="page page--active">
-            <h1 class="page__title">
-                Vous allez éditer votre devis à
-                <span class="title__containerInput">
-                    <input type="text" class="title__input">
-                    <img src="../public/assets/arrow.svg" alt="arrow" class="iconArrow">
-                </span>
-            </h1>
-            <div class="container__page">
-                <div class="thread">
-                    <div class="step step">
-                        <div class="step__label">
-                            <p class="label__title">Développement</p>
-                            <p class="label__subtitle">Site e-commerce</p>
-                        </div>
-                        <div class="step__position">
-                            1
-                            <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">
-                        </div>
+    </div>
+    <div class="page page--active">
+        <h1 class="title">
+            Vous allez éditer votre devis à
+            <span class="title__containerInput">
+                <input type="text" class="title__input">
+                <img src="assets/arrow.svg" alt="arrow" class="iconArrow">
+            </span>
+        </h1>
+        <div class="container__page">
+            <div class="thread">
+                <div class="step step">
+                    <div class="step__label">
+                        <p class="label__title">Développement</p>
+                        <p class="label__subtitle">Site e-commerce</p>
                     </div>
-                    <div class="step">
-                        <div class="step__label">
-                            <p class="label__title">Développement</p>
-                            <p class="label__subtitle">Site e-commerce</p>
-                        </div>
-                        <div class="step__position">
-                            2
-                            <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step__label">
-                            <p class="label__title">Développement</p>
-                            <p class="label__subtitle">Site e-commerce</p>
-                        </div>
-                        <div class="step__position">
-                            3
-                            <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">                
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step__label">
-                            <p class="label__title">Développement</p>
-                            <p class="label__subtitle">Site e-commerce</p>
-                        </div>
-                        <div class="step__position">
-                            4
-                            <img src="../public/assets/check-green.svg" alt="check" class="step__iconCheck">                
-                        </div>
+                    <div class="step__position">
+                        1
+                        <img src="assets/check-green.svg" alt="check" class="step__iconCheck">
                     </div>
                 </div>
-                <div class="container__board">
-                    <div class="board">
-                        <h2 class="board__title">Prestation</h2>
-                        <div class="board__options">
-                        </div>
-                        <div class="board__total">
-                            <span class="total__title">Total</span>
-                            <span class="total__price">0 €</span>
-                        </div>
+                <div class="step">
+                    <div class="step__label">
+                        <p class="label__title">Développement</p>
+                        <p class="label__subtitle">Site e-commerce</p>
                     </div>
-                    <div class="container__button">
-                        <button class="button">Exporter</button>
-                        <button class="button">Envoyer</button>
+                    <div class="step__position">
+                        2
+                        <img src="assets/check-green.svg" alt="check" class="step__iconCheck">
                     </div>
+                </div>
+                <div class="step">
+                    <div class="step__label">
+                        <p class="label__title">Développement</p>
+                        <p class="label__subtitle">Site e-commerce</p>
+                    </div>
+                    <div class="step__position">
+                        3
+                        <img src="assets/check-green.svg" alt="check" class="step__iconCheck">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__label">
+                        <p class="label__title">Développement</p>
+                        <p class="label__subtitle">Site e-commerce</p>
+                    </div>
+                    <div class="step__position">
+                        4
+                        <img src="assets/check-green.svg" alt="check" class="step__iconCheck">
+                    </div>
+                </div>
+            </div>
+            <div class="container__board">
+                <div class="board">
+                    <h2 class="board__title">Prestation</h2>
+                    <div class="board__options">
+                    </div>
+                    <div class="total">
+                        <span class="total__title">Total</span>
+                        <span class="total__price">0 €</span>
+                    </div>
+                </div>
+                <div class="container__button">
+                    <button class="button">Exporter</button>
+                    <button class="button">Envoyer</button>
                 </div>
             </div>
         </div>
-        <div class="page">
-            <div class="dashboard_title">
-                <h2 class="dashboard_title--client">Client</h2>
-                <h2 class="dashboard_title--email">Email</h2>
-                <h2 class="dashboard_title--adresse">Adresse</h2>
-                <h2 class="dashboard_title--telephone">Téléphone</h2>
-                <h2 class="dashboard_title--contacter">Contacter</h2>
-                <h2 class="dashboard_title--action">Actions</h2>
+    </div>
+    <div class="page">
+        <div class="dashboard_title">
+            <h2 class="dashboard_title--client">Client</h2>
+            <h2 class="dashboard_title--email">Email</h2>
+            <h2 class="dashboard_title--adresse">Adresse</h2>
+            <h2 class="dashboard_title--telephone">Téléphone</h2>
+            <h2 class="dashboard_title--contacter">Contacter</h2>
+            <h2 class="dashboard_title--action">Actions</h2>
+        </div>
+        <div class="dashboard_listing">
+            <div class="dashboard_listing--users">
+                <img src="assets/kaiba.jpg" alt="">
+                <h4>Rocco Li Puma</h4>
             </div>
-            <div class="dashboard_listing">
-                <div class="dashboard_listing--users">
-                    <img src="../public/assets/kaiba.jpg" alt="">
-                    <h4>Rocco Li Puma</h4>
-                </div>
-                <div class="dashboard_listing--email">
-                    <p>wesley.lipuma@coucou.fr</p>
-                </div>
-                <div class="dashboard_listing--adresse">
-                    <p>29 rue du Progrés 93100</p>
-                </div>
-                <div class="dashboard_listing--telephone">
-                    <p>06.55.68.90.65</p>
-                </div>
-                <div class="dashboard_listing--contacter">
-                    <button class="calendar">
-                        <img src="../public/assets/calendar.svg" alt="">
-                    </button>
-                    <button class="contacter">contacter</button>
-                </div>
-                <div class="dashboard_listing--actions">
-                    <input type="checkbox" class="dashboard_listing--checkbox" name="" id="">
-                    <img src="../public/assets/Edit-Icon.svg" alt="">
-                </div>
+            <div class="dashboard_listing--email">
+                <p>wesley.lipuma@coucou.fr</p>
+            </div>
+            <div class="dashboard_listing--adresse">
+                <p>29 rue du Progrés 93100</p>
+            </div>
+            <div class="dashboard_listing--telephone">
+                <p>06.55.68.90.65</p>
+            </div>
+            <div class="dashboard_listing--contacter">
+                <button class="calendar">
+                    <img src="assets/calendar.svg" alt="">
+                </button>
+                <button class="contacter">contacter</button>
+            </div>
+            <div class="dashboard_listing--actions">
+                <input type="checkbox" class="dashboard_listing--checkbox" name="" id="">
+                <img src="assets/Edit-Icon.svg" alt="">
             </div>
         </div>
-    </main>
-</body>
+    </div>
+{% endblock %}
+{% block scripts %}
 <script>
     var pages = document.querySelectorAll('.page');
     var tabs = document.querySelectorAll('.tab');

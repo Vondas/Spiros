@@ -37,6 +37,12 @@ mysql -u username -p < seed/bdd.sql
 $ Enter password: password
 ```
 
+Copy the `.env.dist` file in a `.env` file in which you should put your environment variables acording to the model
+```sh
+# /Spiros
+cp .env.dist .env
+```
+
 Compile the scss files to css:
 ```sh
 # /Spiros

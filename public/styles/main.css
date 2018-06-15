@@ -590,6 +590,13 @@ body {
 .formTab--active {
   display: flex; }
 
+.off-r-5 {
+  margin-right: 5px; }
+
+.no-style {
+  color: #222;
+  text-decoration: none; }
+
 .static {
   position: absolute;
   display: flex;
@@ -874,7 +881,7 @@ header {
 
 .dashboard {
   width: 80%;
-  font-family: "Futura LT";
+  font-family: "FuturaLT", sans-serif;
   position: relative;
   top: 85px;
   left: 110px;
@@ -884,7 +891,7 @@ header {
   display: flex;
   justify-content: space-between; }
   .dashboard_user button {
-    font-family: "Futura LT";
+    font-family: "FuturaLT", sans-serif;
     width: 255px;
     height: 50px;
     border-radius: 5px;
