@@ -1,0 +1,83 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    Profile
+{% endblock %}
+{% block body %}
+{{ include('static.html.twig') }}
+<section class="profil">
+    <div class="profil_breadcrumb">
+        <img src="" alt="">
+        <h2>Fiche profil</h2>
+    </div>
+    <div class="profil_personal">
+        <div class="profil_personal--photo">
+            <img src="assets/kaiba.jpg" alt="">
+        </div>
+        <div class="profil_personal--contact">
+            <div class="profil_personal--button">
+                <button class="button">Modifier profil</button>
+                <button class="button">Contacter</button>
+            </div>
+            <div class="profil_personal--nom">
+                <h1>Rocco Li Puma</h1>
+            </div>
+        </div>
+    </div>
+    <div class="profil_user">
+        <div class="profil_user--infos">
+            <div class="profil_user--title">
+                <h3>Informations</h3>
+            </div>
+            <div class="profil_user--section mail">
+                <h4>Mail</h4>
+                <p>weslay.aurore@coucou.fr</p>
+            </div>
+            <div class="profil_user--section">
+                <h4>Adresse</h4>
+                <p>27 rue du progrès, 93400, Montreuil</p>
+            </div>
+            <div class="profil_user--section">
+                <h4>Téléphone</h4>
+                <p>06.97.09.58.84</p>
+            </div>
+            <div class="profil_user--section">
+                <h4>Projet</h4>
+                <p>Oteo</p>
+            </div>
+            <div class="profil_user--section">
+                <h4>Note</h4>
+                <p>It is a small world after all. Globalization is that great process
+                    that started perhaps with Mr.
+                    Marco Polo, but has since regained its prestige after
+                    a short stint of protectionism following the great depression.</p>
+            </div>
+            <div class="profil_user--add-note">
+                <button class="button">Ajouter des notes</button>
+            </div>
+        </div>
+        <div class="profil_personal--history">
+            <div class="profil_personal--client">
+                <h3>Historique client</h3>
+            </div>
+            <div class="profil_personal--appel">
+                <div class="profil_personal--date">
+                    <h3>Appel</h3>
+                    <p>20/02/18</p>
+                </div>
+                <div class="profil_personal--smiley">
+                    <img src="assets/smiley.png" alt="">
+                </div>
+            </div>
+            <div class="profil_personal--appel">
+                <div class="profil_personal--date">
+                    <h3>Appel</h3>
+                    <p>20/02/18</p>
+                </div>
+                <div class="profil_personal--smiley">
+                    <img src="assets/smiley.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
