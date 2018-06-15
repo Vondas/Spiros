@@ -1,8 +1,13 @@
 /** Connexion **/
 
 .connexion_popular {
+    font-family: 'FuturaLT', sans-serif;
+}
+
+.pageContent {
     display: flex;
 }
+
 .connexion {
     margin-top: 55px;
     width: 50%;
@@ -10,8 +15,7 @@
 .connexion_create {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: 100px; 
 }
 .connexion_create h2 {
     font-size: 25px;
@@ -29,11 +33,9 @@
     top: 15px;
  }
 .connexion_login {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: 100px;
 }
 .connexion_login h2 {
     font-size: 25px;
@@ -53,15 +55,25 @@
 .connexion_login_form {
     display: flex;
     flex-direction: column;
-    font-family: 'Futura LT';
-    
 }
 .connexion_form {
     display: flex;
     flex-direction: column;
 }
 .connexion input {
-    width: 313px;
+    padding-bottom: 5px;
+    width: 300px;
+    font-size: 16px;
+    background-color: #FCFCFC;
+    outline: none;
+
+    &::placeholder {
+        color: #d1d1d1;
+    }
+
+    &:first-of-type {
+        margin-top: 25px;
+    }
 }
 .connexion button {
     margin-top: 40px;
@@ -71,17 +83,19 @@
     background-color: #4509d8;
     border: solid 1px #4509d8;
     color: #fff;
-    font-family: "Futura LT"
 } 
 .connexion input {
     margin-top: 50px;
     border: none;
     border-bottom: solid 1px #ececec;
 }
+
 /** Popular **/
 
 .popular {
-    width: 50%;
+    position: absolute;
+    right: 0;
+    width: 40%;
     justify-content: flex-end;
     margin-top: 50px;
 }
@@ -94,21 +108,30 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 }
 .popular_image {
     position: relative;
     width: 50%;
 }
-.popular_fluid img {
-    position: absolute;
-    top: 100px;
+.popular_fluid {
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
     width: 40%;
-    right: 0px;
+    height: 100%;
+    z-index: -1;
 }
+
+.popular_fluid img {
+    width: 100%;
+}
+
 .popular_text img {
-    width: 80%;
+    width: 100%;
 }
 .popular_text h3 {
     font-size: 22px;
@@ -120,8 +143,21 @@
 }
 .popular_text p {
     margin-top: 16px;
-    width: 50%;
+    font-weight: 300;
+    width: 70%;
+    opacity: 0.5;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.9px;
+    color: #222222;
     line-height: 1.5;
 
 }
 
+.formTab {
+    display: none;
+}
+
+.formTab--active {
+    display: flex;
+}

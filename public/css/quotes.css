@@ -1,0 +1,69 @@
+.title {
+    font-family: 'Futura', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222222;
+    margin: 50px 100px;
+}
+
+.thread {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    font-family: 'Futura', sans-serif;
+}
+
+.thread::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: .7;
+    background-color: #000;
+}
+
+.step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+    border: solid 1px #4509d8;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 #dde0ec;
+    background-color: #ffffff;
+    color: #4509d8;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.step::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    bottom: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+}
+
+.step:first-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}

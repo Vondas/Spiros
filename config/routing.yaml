@@ -4,6 +4,27 @@ index:
 login:
   path: /login
   defaults: { _controller: 'Controllers\LoginController::loginAction' }
+logout:
+  path: /logout
+  defaults: { _controller: 'Controllers\LogoutController::logoutAction' }
+signup:
+  path: /signup
+  defaults: { _controller: 'Controllers\SignupController::signupAction' }
+clients:
+  path: /clients
+  defaults: { _controller: 'Controllers\ClientsController::viewAction' }
+clients_create:
+  path: /clients/create
+  defaults: { _controller: 'Controllers\ClientsController::createAction' }
+calendar:
+  path: /calendar
+  defaults: { _controller: 'Controllers\CalendarController::viewAction' }
+estimates:
+  path: /estimates
+  defaults: { _controller: 'Controllers\EstimatesController::viewAction' }
+profile:
+  path: /profile
+  defaults: { _controller: 'Controllers\ProfileController::viewAction' }
 list_customers:
   path: /customers
   defaults: { _controller: 'Controllers\CustomersController::list' }
