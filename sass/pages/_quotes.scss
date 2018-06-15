@@ -3,6 +3,13 @@ body {
     font-family: 'Futura', sans-serif;
 }
 
+.main__quote {
+    position: relative;
+    top: 85px;
+    left: 120px;
+    width: calc(100% - 120px);
+}
+
 .page {
     display: none;
 }
@@ -36,7 +43,7 @@ body {
     border-bottom: solid 3px #e71d7c;
 }
 
-.title {
+.page__title {
     margin: 50px 100px;
     font-family: 'Futura', sans-serif;
     font-size: 20px;
@@ -187,7 +194,7 @@ body {
 }
 
 .container__board {
-    width: 30%;    
+    width: 35%;    
 }
 
 .board {
@@ -223,7 +230,7 @@ body {
     font-weight: 700;
 }
 
-.total {
+.board__total {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -239,8 +246,16 @@ body {
     font-size: 20px;
 }
 
+.total__price {
+    white-space: nowrap;
+}
+
 .container__button {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+}
+
+.page__quotesList {
+    padding-left: 100px;
 }
